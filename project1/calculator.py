@@ -66,9 +66,8 @@ elif (types == 'b'):
         8)kmm
         9)radian
         10)degree
-        11)prime num = prime
-        12)ceil
-        13)floor''')
+        11)ceil
+        12)floor''')
         operator = input('enter your operator : ')
         if (operator == 'max' or operator == 'min'):
             num2 = float(input('enter your seconed number : '))
