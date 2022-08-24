@@ -109,16 +109,15 @@ elif (types == 'b'):
         1) sin
         2)cos
         3)tan
-        4)fact
-        5)max
-        6)min
-        7)bmm
-        8)kmm
-        9)radian
-        10)degree
-        11)ceil
-        12)floor
-        13)atan
+        4)max
+        5)min
+        6)bmm
+        7)kmm
+        8)radian
+        9)degree
+        10)ceil
+        11)floor
+        12)atan
         ''')
 
         operator = input('enter your operator : ')
@@ -136,9 +135,6 @@ elif (types == 'b'):
 
         elif (operator == 'tan'):
             print('tan is = ',math.tan(num1))
-
-        elif (operator == 'fact'):
-            print('fact is = ',math.factorial(num1))
 
         elif (operator == 'max'):
             print('max is = ',max(num1,num2))
@@ -397,38 +393,38 @@ elif (types == 'f'):
         
             dama=float(input(' please enter dama : '))
             type_dama1 =input('''please enter your first temperatuur : 
-1)celsius =c
-2)fahrenheit = f
-3)kelvin  = k
+1)celsius 
+2)fahrenheit 
+3)kelvin  
 ''' )
 
             type_temp2 =input('''please enter your second temperatuur : 
-1)celsius =c
-2)fahrenheit = f
-3)kelvin  = k
+1)celsius 
+2)fahrenheit 
+3)kelvin  
 ''' )
             i6  += 1
-            if type_dama1 =='c' and type_temp2 =='f':
+            if type_dama1 =='1' and type_temp2 =='2':
                f = (dama * 1.8) + 32
                print('fahrenheit = ',f)
 
-            elif type_dama1 == 'f' and type_temp2 == 'c':
+            elif type_dama1 == '2' and type_temp2 == '1':
                 c = (dama - 32) / 1.8
                 print('celsius = ',c)
 
-            elif type_dama1 == 'k' and type_temp2 == 'c':
+            elif type_dama1 == '3' and type_temp2 == '1':
                 c = dama - 273.15
                 print('celsius = ',c)
 
-            elif type_dama1 == 'c' and type_temp2 == 'k':
+            elif type_dama1 == '1' and type_temp2 == '3':
                 k = dama + 273.15
                 print('kelvin = ',k)
 
-            elif type_dama1 == 'f' and type_temp2 == 'k':
+            elif type_dama1 == '2' and type_temp2 == '3':
                 print('kelvin =',(dama + 459.67) / 1.8)
 
 
-            elif type_dama1 == 'k' and type_temp2 == 'f':
+            elif type_dama1 == '3' and type_temp2 == '2':
                 print('fahrenhit =',(dama * 1.8) - 459.67) 
 
             else:
@@ -439,8 +435,6 @@ elif (types == 'g'):
 
     while (i7 < countain):
 
-        shape = input('enter your first shape : ')
-
         print('''
         a)circle
         b)cylinder
@@ -450,11 +444,14 @@ elif (types == 'g'):
         f)diamond
         g)trapezius
         h =parallelogram
+
         i)oval
         j) cube
         k)rectangular cube
         l)sphere
         m)elliptical sphere''')
+
+        shape = input('enter your first shape : ')
         
         if(shape == 'a'):
             
