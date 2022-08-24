@@ -26,73 +26,73 @@ if (types == 'a'):
 
         num1 = float(input('enter your first number : '))
         print('''
-        1)sum = +
-        2)subtraction = -
-        3)mul = *
-        4)div = /
-        5)mod = %
-        6)int_div = //
-        7)pow = **
-        8)absolute value = abs
-        9)logaritm2 = log2
-        10)logaritm10 = log10
-        11)logaritm = log
-        12)radical = rad
-        13)even or odd''')
+        a)sum = +
+        b)subtraction = -
+        c)mul = *
+        d)div = /
+        e)mod = %
+        f)int_div = //
+        g)pow = **
+        h)absolute value 
+        i)logaritm2 = log2
+        j)logaritm10 = log10
+        k)logaritm = log
+        l)radical = rad
+        m)even or odd''')
 
         operator = input('enter your operator : ')
 
-        if (operator == '+' or operator == '-' or operator == '*' or operator == '/'or operator == '//' or operator == '%'or operator == 'log' or operator == '**'):
+        if (operator == 'a' or operator == 'b' or operator == 'c' or operator == 'd'or operator == 'f' or operator == 'e'or operator == 'k' or operator == 'g'):
             
             num2 = float(input('enter your seconed number : '))
 
         i1 += 1
-        if (operator == '+'):
+        if (operator == 'a'):
             print('sum is = ',num1 + num2)
 
-        elif (operator == '-'):
+        elif (operator == 'b'):
             print('subtraction is = ',num1 - num2)
 
-        elif (operator == '*'):
+        elif (operator == 'c'):
             print('mul is = ',num1 * num2)
 
-        elif (operator == '/'):
+        elif (operator == 'd'):
 
             if(num2 != 0):
                 print('div is = ',num1 / num2)
             else:
                 print('error!')
 
-        elif (operator == '%'):
+        elif (operator == 'e'):
             print('mod is = ',num1 % num2)
 
-        elif (operator == '//'):
+        elif (operator == 'f'):
 
             if(num2 != 0):
                 print('int_div is = ',num1 // num2)   
             else:
                 print('error!')
 
-        elif (operator == '**'):
+        elif (operator == 'g'):
             print('pow is = ',num1 ** num2)
 
-        elif (operator == 'abs'):
+        elif (operator == 'h'):
             print('subtraction is = \n ',abs(num1))
 
-        elif (operator == 'log2'):
+        elif (operator == 'i'):
             print('logaritm2 is = ',math.log2(num1))
 
-        elif (operator == 'log10'):
+        elif (operator == 'j'):
             print('logaritm10 is = ',math.log10(num1))
 
-        elif (operator == 'log'):
+        elif (operator == 'k'):
             print('logaritm is = ',math.log(num1,num2))
 
-        elif (operator == 'rad'):
+        elif (operator == 'l'):
 
             print('radical is = ',math.sqrt(num1))
 
-        elif (operator == 'even_odd'):
+        elif (operator == 'm'):
                 
                 if(num1%2==0):
                     print("your number is even")
@@ -111,50 +111,48 @@ elif (types == 'b'):
         3)tan
         4)max
         5)min
-        6)bmm
-        7)kmm
-        8)radian
-        9)degree
-        10)ceil
-        11)floor
-        12)atan
+        6)radian
+        7)degree
+        8)ceil
+        9)floor
+        10)atan
         ''')
 
         operator = input('enter your operator : ')
 
-        if (operator == 'max' or operator == 'min'):
+        if (operator == '4' or operator == '5'):
             num2 = float(input('enter your seconed number : '))
 
         i2 += 1
 
-        if (operator == 'sin'):
+        if (operator == '1'):
             print('sin is = ',math.sin(num1))
 
-        elif (operator == 'cos'):
+        elif (operator == '2'):
             print('cos is = ',math.cos(num1))
 
-        elif (operator == 'tan'):
+        elif (operator == '3'):
             print('tan is = ',math.tan(num1))
 
-        elif (operator == 'max'):
+        elif (operator == '4'):
             print('max is = ',max(num1,num2))
 
-        elif (operator == 'min'):
+        elif (operator == '5'):
             print('min is = ',min(num1,num2))
 
-        elif (operator == 'radian'):
+        elif (operator == '6'):
             print('radian is = ',math.radians(num1))
 
-        elif (operator == 'degree'):
+        elif (operator == '7'):
             print('degree is = ',math.degrees(num1))
 
-        elif (operator == 'ceil'):
+        elif (operator == '8'):
             print('ceil is = ',math.ceil(num1))
 
-        elif (operator == 'floor'):
+        elif (operator == '9'):
             print('floor is = ',math.floor(num1))
 
-        elif (operator == 'atan'):
+        elif (operator == '10'):
             print('atan is = ',math.atan(num1))
 
 elif (types == 'c'):
@@ -172,21 +170,21 @@ elif (types == 'c'):
 
         operator = input('enter your operator : ')
 
-        if (operator == 'bmm' or operator == 'kmm'):
+        if (operator == '2' or operator == '3'):
             num2 = int(input('enter your seconed number : '))
 
         i3 += 1
 
-        if (operator == 'fact'):
+        if (operator == '1'):
             print('sin is = ',math.factorial(num1))
 
-        elif (operator == 'bmm'):
+        elif (operator == '2'):
             print('bmm is = ',math.gcd(num1,num2))
 
-        elif (operator == 'kmm'):
+        elif (operator == '3'):
             print('kmm is = \n ',math.lcm(num1,num2))
 
-        elif (operator == 'prime'):
+        elif (operator == '4'):
 
             accumulator = 0
 
@@ -199,7 +197,7 @@ elif (types == 'c'):
                     print('your number is prime')
             else:
                     print('your number is not prime')
-        elif (operator == 'exp'):
+        elif (operator == '5'):
             print('exp is = ',math.exp(num1))
 
 elif (types == 'd'):
