@@ -27,17 +27,17 @@ if (types == 'a'):
     while (i1 < countain):
 
         print('''
-        a)sum = +
-        b)subtraction = -
-        c)mul = *
-        d)div = /
-        e)mod = %
-        f)int_div = //
-        g)pow = **
+        a)sum 
+        b)subtraction 
+        c)mul 
+        d)div 
+        e)mod 
+        f)int_div 
+        g)pow 
         h)absolute value 
-        i)logaritm2 = log2
-        j)logaritm10 = log10
-        k)logaritm = log
+        i)logaritm2
+        j)logaritm10 
+        k)logaritm 
         l)radical = rad
         m)even or odd''')
 
