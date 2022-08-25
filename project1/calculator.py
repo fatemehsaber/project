@@ -1,16 +1,18 @@
-from hashlib import sha1
+
 import math
 
-types = input('''what type do you want to use ?
+countain = int (input('\nhow many times do tou want to use the calculator ? \n\n'))
+
+types = input('''\nwhat type do you want to use ?
 a)elementary
 b)advanced
 c)khast
 d)tabdil_mabna
 e)BMI
 f)temperature conversion
-g)shapes \n''')
+g)shapes \n\n''')
 
-countain = int (input('how many times do tou want to use the calculator ? '))
+
 
 i1 = 0
 i2 = 0
@@ -24,7 +26,6 @@ if (types == 'a'):
 
     while (i1 < countain):
 
-        num1 = float(input('enter your first number : '))
         print('''
         a)sum = +
         b)subtraction = -
@@ -40,7 +41,9 @@ if (types == 'a'):
         l)radical = rad
         m)even or odd''')
 
-        operator = input('enter your operator : ')
+        operator = input('\nenter your operator : \n\n ')
+
+        num1 = float(input('enter your first number : '))
 
         if (operator == 'a' or operator == 'b' or operator == 'c' or operator == 'd'or operator == 'f' or operator == 'e'or operator == 'k' or operator == 'g'):
             
@@ -103,8 +106,6 @@ elif (types == 'b'):
 
     while (i2 < countain):
 
-        num1 = float(input('enter your first number : '))
-    
         print('''
         1) sin
         2)cos
@@ -119,6 +120,8 @@ elif (types == 'b'):
         ''')
 
         operator = input('enter your operator : ')
+
+        num1 = float(input('enter your first number : '))
 
         if (operator == '4' or operator == '5'):
             num2 = float(input('enter your seconed number : '))
@@ -159,8 +162,6 @@ elif (types == 'c'):
 
     while (i3 < countain):
 
-        num1 = int(input('enter your first number : '))
-
         print('''
         1)fact
         2)bmm
@@ -168,7 +169,10 @@ elif (types == 'c'):
         4)prime num = prime
         5)exp''')
 
+
         operator = input('enter your operator : ')
+
+        num1 = int(input('enter your first number : '))
 
         if (operator == '2' or operator == '3'):
             num2 = int(input('enter your seconed number : '))
