@@ -458,6 +458,9 @@ elif (types == 'g'):
         if(shape == 'a'):
             
             radius = float(input('enter of radius : '))
+            if radius < 0 :
+                print('error!')
+                break
             
             C = 2 * math.pi *radius
             A = math.pi * radius ** 2
@@ -469,6 +472,10 @@ elif (types == 'g'):
             height = float(input('enter the height : '))
 
             radius = float(input('enter the radius : '))
+
+            if radius < 0 or height < 0 :
+                print('error!')
+                break
 
 
 
@@ -485,6 +492,10 @@ elif (types == 'g'):
             side1 = float(input('enter of side1 : '))
             side2 = float(input('enter of side2 : '))
             side3 = float(input('enter of side3 : '))
+
+            if base < 0 or height < 0 or side1 < 0 or side2 < 0 or side3 < 0:
+                print('error!')
+                break
             
             C = 0.5 * base * height
             A = side2 + side1 + side3
@@ -497,6 +508,9 @@ elif (types == 'g'):
         elif(shape == 'd'):
             
             side = float(input('enter of side : '))
+            if side < 0  :
+                print('error!')
+                break
             
             C = side ** 2
             A = 4 * side
@@ -506,6 +520,9 @@ elif (types == 'g'):
             
             l = float(input('enter of length : '))
             w = float(input('enter of width : '))
+            if l < 0 or w < 0 :
+                print('error!')
+                break
             
             C = l * w
             A = 2 * l + 2 * w
@@ -516,6 +533,9 @@ elif (types == 'g'):
             
             b = float(input('enter of length : '))
             h = float(input('enter of width : '))
+            if b < 0 or h< 0 :
+                print('error!')
+                break
             
             C = b * h
             A = 4 * b
@@ -531,6 +551,10 @@ elif (types == 'g'):
             side2 = float(input('enter of side2 : '))
             side3 = float(input('enter of side3 : '))
 
+            if Base< 0 or base < 0 or height < 0 or side1 < 0 or side2 < 0 or side3 < 0:
+                print('error!')
+                break
+
             C = height*(Base + base) /2
             A = side1 + side2 + side3
 
@@ -543,6 +567,10 @@ elif (types == 'g'):
             side1 = float(input('enter of side1 : '))
             side2 = float(input('enter of side2 : '))
             side3 = float(input('enter of side3 : '))
+
+            if b < 0 or h < 0 or side1 < 0 or side2 < 0 or side3 < 0:
+                print('error!')
+                break
             
             C = b * h
             A = side1 + side2 + side3
@@ -554,6 +582,9 @@ elif (types == 'g'):
             r1 = float(input('enter of radius : '))
             r2 = float(input('enter of radius : '))
             
+            if r2< 0 or r1< 0 :
+                print('error!')
+                break
             A = math.pi * r1 * r2
 
             print('area is :', A )
@@ -561,6 +592,10 @@ elif (types == 'g'):
         elif(shape == 'j'):
             
             s = float(input('enter of side : '))
+
+            if  s < 0:
+                print('error!')
+                break
         
             C = 6 * s ** 2
             V = s ** 3
@@ -573,6 +608,10 @@ elif (types == 'g'):
             b = float(input('enter of side2 : '))
             c = float(input('enter of side3 : '))
 
+            if a< 0 or b< 0 or c < 0:
+                print('error!')
+                break
+
             A = 2 * a *c +2 *b *c + 2 * a *b
             V =a * b * c
 
@@ -581,6 +620,9 @@ elif (types == 'g'):
         elif(shape == 'l'):
             
             r = float(input('enter of radius : '))
+            if r< 0 :
+                print('error!')
+                break
             
             C = 4 * math.pi * r ** 2
             V = (4/3) * math.pi * r ** 3
@@ -592,6 +634,10 @@ elif (types == 'g'):
             r1 = float(input('enter of radius1 : '))
             r2 = float(input('enter of radius2 : '))
             r3 = float(input('enter of radius3 : '))
+
+            if r1< 0 or r2 < 0 or r3 < 0 :
+                print('error!')
+                break
             
             C = 4 * math.pi * r1 * r2
             V = (4/3) * math.pi * r1 * r2 * r3
